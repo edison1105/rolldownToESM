@@ -32,12 +32,15 @@ const __mock_library = __toESM(require("./mock-library.cjs"));
 // works fine without __toESM
 // const __mock_library = require("./mock-library.cjs");
 
-exports.compile = function compile() {}
+exports.bar = function bar() {}
 
 Object.keys(__mock_library).forEach(function (k) {
   if (k !== 'default' && !Object.prototype.hasOwnProperty.call(exports, k)) Object.defineProperty(exports, k, {
     enumerable: true,
     get: function () { return __mock_library[k]; }
   });
+
+  // still not working, due to __toESM processed properties as a getter function
+  // exports[k] = __mock_library[k]
 });
 
