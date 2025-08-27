@@ -1,0 +1,11 @@
+{
+  "name": "rolldown-toesm-bug-repro",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Minimal reproduction case for __toESM function breaking ES module imports",
+  "main": "final-demo.js",
+  "scripts": {
+    "test": "node final-demo.js"
+  },
+  "license": "MIT"
+}
