@@ -6,6 +6,7 @@ const configs = [
     output: {
       file: "./packages/foo/dist/foo.js",
       format: "cjs",
+      esModule: true,
     },
     external: ["bar"],
   },
@@ -14,6 +15,7 @@ const configs = [
     output: {
       file: "./packages/bar/dist/bar.js",
       format: "cjs",
+      esModule: true,
     },
   },
 ];
