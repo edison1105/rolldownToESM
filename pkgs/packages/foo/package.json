@@ -1,0 +1,13 @@
+{
+  "name": "foo",
+  "description": "foo",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "dependencies": {
+    "bar": "workspace:*"
+  },
+  "license": "MIT"
+}
