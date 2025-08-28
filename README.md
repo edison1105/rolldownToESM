@@ -24,3 +24,10 @@ Rolldown output (uses __toESM): [ '__esModule', 'bar', 'default' ]
   - I'm migrating the rollup build of vuejs/core to rolldown and encountered this issue. All ecosystem-ci tests are failing with errors saying `SyntaxError: The requested module 'vue' does not provide an export named 'xxx'`. After comparing rollup and rolldown outputs, I found that `__toESM` is the cause.
   - `bug-repro.cjs` simulates vue's build output `vue.cjs.js`
   - Running `pnpm run test` will reproduce the vue/ecosystem-ci error
+
+
+## Steps to Reproduce in './pkgs'
+1. cd pkgs
+2. pnpm install
+3. pnpm run build
+4. see `pkgs/foo/dist/foo.js` 
