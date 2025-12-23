@@ -1,7 +1,9 @@
 
-import { bar } from 'bar';
+import * as BAZ from './baz.js';
 export function foo(){
-    bar()
+    const obj = {
+        'bar': BAZ
+    }
+    return obj;
 }
-
 export * from 'bar';
