@@ -5,8 +5,7 @@
   "description": "Minimal reproduction case for __toESM function breaking ES module imports",
   "main": "test.js",
   "scripts": {
-    "test": "node test.js",
-    "test2": "node final-demo.js"
+    "test": "node test.js"
   },
   "license": "MIT"
 }
