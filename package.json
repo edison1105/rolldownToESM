@@ -7,5 +7,8 @@
   "scripts": {
     "test": "node test.js"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cjs-module-lexer": "^1.4.3"
+  }
 }
